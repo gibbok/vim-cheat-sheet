@@ -1,6 +1,12 @@
 # Vim Cheat Sheet
 Vim cheat sheet, useful commands compatible with `vscodevim` for Microsoft Visual Studio Code.
 
+## Commands
+
+Vim commands are formed from a combination of verbs and targets.The targets could be objects (words, sentences, paragraphs, lines, the contents of parentheses) or movements (jump to end of word, jump to end of paragraph, jump forward until the letter ‘e’, etc). Forming objects generally involves the use of a modifier. You can also add a count to perform the action count times.
+
+## Verbs
+
 | Command | Use | 
 | - | - | 
 | i | insert - enter insert mode |
@@ -23,11 +29,22 @@ Vim cheat sheet, useful commands compatible with `vscodevim` for Microsoft Visua
 | N | find the previous instance of the search term |
 | . | repeat last change (extremely powerful) |
 
+## Nouns/Movements
 
-- Put the cursor on a word and hit the * key and you will jump to the next instance of that word.
+Nouns or movements are commands for moving within the document or representing an area within a document.
 
-- The # key does the same but jumps to the previous instance of the word.
-
-
-
-
+| Command | Use | 
+| - | - | 
+| h, j, k, l | equivalent to the arrow keys left, down, up, right |
+| 0 | move to the very beginning of the current line |
+| ^ | move to the first non-whitespace character on the line |
+| $ | move to the end of the line |
+| w, b | move to the next/previous word |
+| W, B | as w/b only Words are bigger |
+| ), ( | move to the next/previous sentence |
+| }, { | move to the next/previous paragraph |
+| /[regexp] | like t but instead of finding a character it finds a regexp |
+| % | jump to the matching parenthesis (vim understands nested parenthesis) |
+| _ | move to the current line (useful for making commands line-based) |
+| *[char] | jump to the next instance of the word under [char] |
+| #[char] | jump to the previous instance of the word under [char] |
