@@ -10,13 +10,17 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | Command | Use | 
 | - | - | 
 | i | insert - enter insert mode |
+| v | enter visual mode |
+| V | enter visual line (selects the current line in one key stroke) |
 | a | append - enter insert mode after the carat | 
 | I | enter insert mode at the beginning of the line | 
 | A | append to line (enter insert mode at the end of the line) | 
 | o | open a line after the current one and enter insert mode |
 | O | open a line before the current one and enter insert mode |
 | d[target] | delete (remove from the document and put in buffer) |
+| dd | delete current lint |
 | y[target] | yank (copy) |
+| yy | yank (copy the line) |
 | p | paste the buffer after the cursor |
 | P | paste the buffer before the cursor |
 | c[target] | change (delete and then enter insert mode) |
@@ -46,16 +50,7 @@ Nouns or movements are commands for moving within the document or representing a
 | /[regexp] | like t but instead of finding a character it finds a regexp |
 | % | jump to the matching parenthesis (vim understands nested parenthesis) |
 | _ | move to the current line (useful for making commands line-based) |
-| *[char] | jump to the next instance of the word under [char] |
 | #[char] | jump to the previous instance of the word under [char] |
+| >> or << | indent the line |
+| *[char] | jump to the next instance of the word under [char] |
 
-
-### Others
-Capital V selects the current line in one key stroke; two, if you include the "shift" in shift+v.
-
-copy the line: yy
-delete the line: dd
-indent the line: >> or <<
-select the current paragraph: Vap or Vip
-delete from the current line to the end of the file 0dg
-highlight the current line to see where my cursor is: use :set cursorline in .vimrc file
