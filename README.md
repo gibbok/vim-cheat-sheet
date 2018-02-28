@@ -48,3 +48,14 @@ Nouns or movements are commands for moving within the document or representing a
 | _ | move to the current line (useful for making commands line-based) |
 | *[char] | jump to the next instance of the word under [char] |
 | #[char] | jump to the previous instance of the word under [char] |
+
+
+### Others
+Capital V selects the current line in one key stroke; two, if you include the "shift" in shift+v.
+
+copy the line: yy
+delete the line: dd
+indent the line: >> or <<
+select the current paragraph: Vap or Vip
+delete from the current line to the end of the file 0dg
+highlight the current line to see where my cursor is: use :set cursorline in .vimrc file
