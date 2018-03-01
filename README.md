@@ -5,6 +5,10 @@ Vim cheat sheet, useful commands compatible with `vscodevim` for Microsoft Visua
 
 Vim commands are formed from a combination of verbs and targets.The targets could be objects (words, sentences, paragraphs, lines, the contents of parentheses) or movements (jump to end of word, jump to end of paragraph, jump forward until the letter ‘e’, etc). Forming objects generally involves the use of a modifier. You can also add a count to perform the action count times.
 
+
+
+
+
 ## Verbs
 
 | Command | Use | 
@@ -24,6 +28,7 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | p | paste the buffer after the cursor |
 | P | paste the buffer before the cursor |
 | c[target] | change (delete and then enter insert mode) |
+| s | deletes the character under the curser and puts you into insert mode |
 | r[char] | replace the character under the cursor with [char] |
 | x | delete the character under the cursor |
 | u | undo the last command |
