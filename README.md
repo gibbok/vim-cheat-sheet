@@ -22,7 +22,7 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | o | open a line after the current one and enter insert mode |
 | O | open a line before the current one and enter insert mode |
 | d[target] | delete (remove from the document and put in buffer) |
-| dd | delete current lint |
+| dd | delete current line |
 | y[target] | yank (copy) |
 | yy | yank (copy the line) |
 | p | paste the buffer after the cursor |
@@ -45,6 +45,16 @@ Nouns or movements are commands for moving within the document or representing a
 | Command | Use | 
 | - | - | 
 | h, j, k, l | equivalent to the arrow keys left, down, up, right |
+| H | move to top of screen |
+| M | move to middle of screen |
+| L | move to bottom of screen |
+| zz | scroll the line with the cursor to the center of the screen |
+| zt | scroll the line with the cursor to the top |
+| zb | scroll the line with the cursor to the bottom |
+| Ctrl-D | move half-page down |
+| Ctrl-U | move half-page up |
+| Ctrl-B | page up |
+|Ctrl-F | page down |
 | 0 | move to the very beginning of the current line |
 | ^ | move to the first non-whitespace character on the line |
 | $ | move to the end of the line |
