@@ -28,6 +28,8 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | p | paste the buffer after the cursor |
 | P | paste the buffer before the cursor |
 | c[target] | change (delete and then enter insert mode) |
+| ciw | change inner word will change the whole word under the cursor |
+| cw | change the word from the current cursor position |
 | s | deletes the character under the curser and puts you into insert mode |
 | r[char] | replace the character under the cursor with [char] |
 | x | delete the character under the cursor |
