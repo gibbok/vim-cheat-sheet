@@ -37,6 +37,8 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | n | find the next instance of the search term |
 | N | find the previous instance of the search term |
 | . | repeat last change (extremely powerful) |
+| gc | toggles line comment, example `gcc` to toggle line comment for current line and `gc2j` to toggle line comments for the current line and the next line |
+| gC | toggles block comment, example `gCi` to comment out everything within parenthesis.
 
 ## Nouns/Movements
 
