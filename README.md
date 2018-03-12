@@ -16,6 +16,7 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | i | insert - enter insert mode |
 | v | enter visual mode |
 | V | enter visual line (selects the current line in one key stroke) |
+| viw | select world under the cursor |
 | a | append - enter insert mode after the carat | 
 | I | enter insert mode at the beginning of the line | 
 | A | append to line (enter insert mode at the end of the line) | 
