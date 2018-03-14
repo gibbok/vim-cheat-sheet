@@ -73,4 +73,5 @@ Nouns or movements are commands for moving within the document or representing a
 | #[char] | jump to the previous instance of the word under [char] |
 | >> or << | indent the line |
 | *[char] | jump to the next instance of the word under [char] |
+| ddp / ddkP | are common commands to move a line one down / up |
 
