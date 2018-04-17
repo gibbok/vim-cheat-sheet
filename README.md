@@ -1,6 +1,14 @@
 # Vim Cheat Sheet
 Vim cheat sheet, useful commands compatible with `vscodevim` for Microsoft Visual Studio Code.
 
+verbs: v (visual), c (change), d (delete), y (yank/copy). these are the most important. there are others
+
+modifiers: i (inside), a (around), t (till..finds a character), f (find..like till except including the char), / (search..find a string/regex)
+
+text objects: w (word), s (sentence) p (paragraph) b (block/parentheses), t (tag, works for html/xml)
+
+
+
 ## Commands
 
 Vim commands are formed from a combination of verbs and targets.The targets could be objects (words, sentences, paragraphs, lines, the contents of parentheses) or movements (jump to end of word, jump to end of paragraph, jump forward until the letter ‘e’, etc). Forming objects generally involves the use of a modifier. You can also add a count to perform the action count times.
@@ -48,6 +56,7 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | shift+0 | move to the end of the line | 
 | shift+i | move to the beginning of the line and switch to insert mode |
 | $ | move to the end of the line |
+| vap | visually select paragraph under cursor | 
 
 ## Nouns/Movements
 
