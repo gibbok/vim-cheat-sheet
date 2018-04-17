@@ -44,6 +44,10 @@ Vim commands are formed from a combination of verbs and targets.The targets coul
 | gC | toggles block comment, example `gCi` to comment out everything within parenthesis.
 | vit | visually select text in a tag |
 | vat | visually select text around a tag |
+| ^ or 0 | move to the beginning of the line |
+| shift+0 | move to the end of the line | 
+| shift+i | move to the beginning of the line and switch to insert mode |
+| $ | move to the end of the line |
 
 ## Nouns/Movements
 
