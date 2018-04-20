@@ -115,3 +115,8 @@ To paste from system clipboard on Windows (or from "mouse highlight" clipboard o
 To access all currently defined registers type
 
 :reg
+
+
+------------
+
+The "." command repeats the last change made in normal mode. For example, if you press dw to delete a word, you can then press . to delete another word (. is dot, aka period or full stop).
