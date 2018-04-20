@@ -90,3 +90,28 @@ Nouns or movements are commands for moving within the document or representing a
 | *[char] | jump to the next instance of the word under [char] |
 | ddp / ddkP | are common commands to move a line one down / up |
 
+
+
+Registers in Vim let you run actions or commands on text stored within them. To access a register, you type "a before a command, where a is the name of a register. If you want to copy the current line into register k, you can type
+
+"kyy
+
+Or you can append to a register by using a capital letter
+
+"Kyy
+
+You can then move through the document and paste it elsewhere using
+
+"kp
+
+To paste from system clipboard on Linux
+
+"+p
+
+To paste from system clipboard on Windows (or from "mouse highlight" clipboard on Linux)
+
+"*p
+
+To access all currently defined registers type
+
+:reg
