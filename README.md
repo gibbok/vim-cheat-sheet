@@ -130,3 +130,4 @@ http://vim.wikia.com/wiki/Using_marks
 `dat` = delete current tag (and all its content)
 
 `f[caracther]` = find character and move cursor at that position
+`t[caracther]` = find character and move cursor at one position before
