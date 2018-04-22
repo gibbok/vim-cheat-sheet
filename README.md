@@ -120,3 +120,6 @@ To access all currently defined registers type
 ------------
 
 The "." command repeats the last change made in normal mode. For example, if you press dw to delete a word, you can then press . to delete another word (. is dot, aka period or full stop).
+
+
+http://vim.wikia.com/wiki/Using_marks
