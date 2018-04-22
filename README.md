@@ -123,3 +123,5 @@ The "." command repeats the last change made in normal mode. For example, if you
 
 
 http://vim.wikia.com/wiki/Using_marks
+
+`vi[characterh]` visualize all content inside that cahracters, exampl:, `vi{` highlight all content in curly braces
