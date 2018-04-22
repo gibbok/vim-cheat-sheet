@@ -131,3 +131,7 @@ http://vim.wikia.com/wiki/Using_marks
 
 `f[caracther]` = find character and move cursor at that position
 `t[caracther]` = find character and move cursor at one position before
+
+`H` go to higher part of the screen
+`M` go to the midle part of the screen
+`L` go to the lower part of the screen
