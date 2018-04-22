@@ -126,3 +126,5 @@ http://vim.wikia.com/wiki/Using_marks
 
 `vi[character]` visualize all content inside that cahracters excluding delimiter, example:, `vi{` highlight all content inside curly braces)
 `va[character]` visualize all content inside that cahracters including delimiter, example:, `va{` highlight all content inside curly braces included the braces)
+
+`dat` = delete current tag (and all its content)
