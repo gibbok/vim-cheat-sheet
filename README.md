@@ -135,3 +135,6 @@ http://vim.wikia.com/wiki/Using_marks
 `H` go to higher part of the screen
 `M` go to the midle part of the screen
 `L` go to the lower part of the screen
+
+
+https://github.com/gibbok/vim-cheat-sheet
