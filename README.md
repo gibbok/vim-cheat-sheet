@@ -64,29 +64,19 @@ Forming objects generally involves the use of a modifier. You can also add a cou
 | Ctrl-R | redo the last undo (sidenote: in vim undo/redo forms a tree, changes aren’t lost) |
 | Ctrl-[ | exit insert mode |
 | Ctrl-c | exit insert mode |
+| gc | toggles line comment, example `gcc` to toggle line comment for current line and `gc2j` to toggle line comments for the current line and the next line |
+| gC | toggles block comment, example `gCi` to comment out everything within parenthesis.
 
 ## Verbs
 
 | Command | Use | 
 | - | - | 
-
-
-
-
 | ciw | change inner word will change the whole word under the cursor |
 | cw | change the word from the current cursor position |
-
-
-
-
-
 | / | enter regex search mode |
 | n | find the next instance of the search term |
 | N | find the previous instance of the search term |
 | . | repeat last change (extremely powerful) |
-| gc | toggles line comment, example `gcc` to toggle line comment for current line and `gc2j` to toggle line comments for the current line and the next line |
-| gC | toggles block comment, example `gCi` to comment out everything within parenthesis.
-
 | ^ or 0 | move to the beginning of the line |
 | Shift+0 | move to the end of the line | 
 | Shift+i | move to the beginning of the line and switch to insert mode |
