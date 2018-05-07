@@ -65,7 +65,7 @@ Forming objects generally involves the use of a modifier. You can also add a cou
 | Ctrl-[ | exit insert mode |
 | Ctrl-c | exit insert mode |
 | gc | toggles line comment, example `gcc` to toggle line comment for current line and `gc2j` to toggle line comments for the current line and the next line |
-| gC | toggles block comment, example `gCi` to comment out everything within parenthesis.
+| gC | toggles block comment, example `gCi` to comment out everything within parenthesis |
 
 ## Verbs
 
