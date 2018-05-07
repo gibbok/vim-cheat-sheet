@@ -121,7 +121,8 @@ Nouns or movements are commands for moving within the document or representing a
 | % | jump to the matching parenthesis (vim understands nested parenthesis) |
 | _ | move to the current line (useful for making commands line-based) |
 | #[char] | jump to the previous instance of the word under [char] |
-| >> or << | indent the line |
+| >> | indent line |
+| << | outdent line |
 | *[char] | jump to the next instance of the word under [char] |
 | ddp / ddkP | are common commands to move a line one down / up |
 
@@ -188,4 +189,3 @@ visual select inside [
 if in visual more we select
 `i{character}` we can expand the selection to that character, similar including `a{character}`
 
-to exit insert mode use `ctrl+[` or `ctrl+c`
