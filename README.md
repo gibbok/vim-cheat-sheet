@@ -12,7 +12,7 @@ Forming objects generally involves the use of a modifier. You can also add a cou
 | - | - | 
 | v | visual |
 | c | change |
-| d | delete |
+| d | delete (remove from the document and put in buffer) |
 | dd | delete current line |
 | y | yank/copy |
 | yy | yank/copy the line) |
@@ -50,21 +50,25 @@ Forming objects generally involves the use of a modifier. You can also add a cou
 
 
 
+## Useful
 
-
-
+| Command | Use | 
+| - | - | 
+|vi[char]| visualize all content inside that cahracters excluding delimiter |
+|va[char]| visualize all content inside that cahracters including delimiter |
+| vi{ | select all content inside curly braces excluding braces |
+| va{ | select all content inside curly braces including braces |
+| viw | select world under the cursor |
+| vit | visually select text in a tag |
+| vat | visually select text around a tag |
+| Ctrl-R | redo the last undo (sidenote: in vim undo/redo forms a tree, changes aren’t lost) |
+| Ctrl-[ | exit insert mode |
+| Ctrl-c | exit insert mode |
 
 ## Verbs
 
 | Command | Use | 
 | - | - | 
-
-| viw | select world under the cursor |
-
-
-
-| d[target] | delete (remove from the document and put in buffer) |
-
 
 
 
@@ -75,18 +79,17 @@ Forming objects generally involves the use of a modifier. You can also add a cou
 
 
 
-| Ctrl-R | redo the last undo (sidenote: in vim undo/redo forms a tree, changes aren’t lost) |
+
 | / | enter regex search mode |
 | n | find the next instance of the search term |
 | N | find the previous instance of the search term |
 | . | repeat last change (extremely powerful) |
 | gc | toggles line comment, example `gcc` to toggle line comment for current line and `gc2j` to toggle line comments for the current line and the next line |
 | gC | toggles block comment, example `gCi` to comment out everything within parenthesis.
-| vit | visually select text in a tag |
-| vat | visually select text around a tag |
+
 | ^ or 0 | move to the beginning of the line |
-| shift+0 | move to the end of the line | 
-| shift+i | move to the beginning of the line and switch to insert mode |
+| Shift+0 | move to the end of the line | 
+| Shift+i | move to the beginning of the line and switch to insert mode |
 | $ | move to the end of the line |
 | vap | visually select paragraph under cursor | 
 
@@ -156,8 +159,7 @@ The "." command repeats the last change made in normal mode. For example, if you
 
 http://vim.wikia.com/wiki/Using_marks
 
-`vi[character]` visualize all content inside that cahracters excluding delimiter, example:, `vi{` highlight all content inside curly braces)
-`va[character]` visualize all content inside that cahracters including delimiter, example:, `va{` highlight all content inside curly braces included the braces)
+
 
 `dat` = delete current tag (and all its content)
 
