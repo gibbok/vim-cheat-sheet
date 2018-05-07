@@ -1,12 +1,28 @@
 # Vim Cheat Sheet
 Vim cheat sheet, useful commands compatible with `vscodevim` for Microsoft Visual Studio Code.
 
-verbs: v (visual), c (change), d (delete), y (yank/copy). these are the most important. there are others
+| Verbs | Use | 
+| - | - | 
+| v | visual |
+| c | change |
+| d | delete |
+| y | yank/copy |
 
-modifiers: i (inside), a (around), t (till..finds a character), f (find..like till except including the char), / (search..find a string/regex)
+| Modifiers | Use | 
+| - | - |
+| i | inside |
+| a | around |
+| t | till..finds a character |
+| f | ind..like till except including the char |
+| / | search..find a string/regex |
 
-text objects: w (word), s (sentence) p (paragraph) b (block/parentheses), t (tag, works for html/xml)
-
+| Text objects | Use | 
+| - | - |
+| w | word |
+| s | sentence |
+| p | paragraph |
+| b | block/parentheses |
+| t | tag, works for html/xm |
 
 
 ## Commands
