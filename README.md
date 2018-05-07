@@ -13,7 +13,24 @@ Forming objects generally involves the use of a modifier. You can also add a cou
 | v | visual |
 | c | change |
 | d | delete |
+| dd | delete current line |
 | y | yank/copy |
+| yy | yank/copy the line) |
+| i | enter insert mode |
+| I | enter insert mode at the beginning of the line |
+| v | enter visual mode |
+| V | enter visual line (selects the current line in one key stroke) |
+| p | paste the buffer after the cursor |
+| P | paste the buffer before the cursor |
+| r | replace the character under the cursor with [char] |
+| s | deletes the character under the curser and puts you into insert mode |
+| x | delete the character under the cursor |
+| u | undo the last command |
+| a | append - enter insert mode after the carat | 
+| A | append to line (enter insert mode at the end of the line) | 
+| o | open a line after the current one and enter insert mode |
+| O | open a line before the current one and enter insert mode |
+
 
 | Modifiers | Use | 
 | - | - |
@@ -41,28 +58,23 @@ Forming objects generally involves the use of a modifier. You can also add a cou
 
 | Command | Use | 
 | - | - | 
-| i | insert - enter insert mode |
-| v | enter visual mode |
-| V | enter visual line (selects the current line in one key stroke) |
+
 | viw | select world under the cursor |
-| a | append - enter insert mode after the carat | 
-| I | enter insert mode at the beginning of the line | 
-| A | append to line (enter insert mode at the end of the line) | 
-| o | open a line after the current one and enter insert mode |
-| O | open a line before the current one and enter insert mode |
+
+
+
 | d[target] | delete (remove from the document and put in buffer) |
-| dd | delete current line |
-| y[target] | yank (copy) |
-| yy | yank (copy the line) |
-| p | paste the buffer after the cursor |
-| P | paste the buffer before the cursor |
-| c[target] | change (delete and then enter insert mode) |
+
+
+
+
+
 | ciw | change inner word will change the whole word under the cursor |
 | cw | change the word from the current cursor position |
-| s | deletes the character under the curser and puts you into insert mode |
-| r[char] | replace the character under the cursor with [char] |
-| x | delete the character under the cursor |
-| u | undo the last command |
+
+
+
+
 | Ctrl-R | redo the last undo (sidenote: in vim undo/redo forms a tree, changes aren’t lost) |
 | / | enter regex search mode |
 | n | find the next instance of the search term |
@@ -94,7 +106,7 @@ Nouns or movements are commands for moving within the document or representing a
 | Ctrl-D | move half-page down |
 | Ctrl-U | move half-page up |
 | Ctrl-B | page up |
-|Ctrl-F | page down |
+| Ctrl-F | page down |
 | 0 | move to the very beginning of the current line |
 | ^ | move to the first non-whitespace character on the line |
 | $ | move to the end of the line |
