@@ -1,6 +1,13 @@
 # Vim Cheat Sheet
 Vim cheat sheet, useful commands compatible with `vscodevim` for Microsoft Visual Studio Code.
 
+## Vim as Language
+
+
+### Commands
+Vim commands are formed from a combination of verbs and targets.The targets could be objects (words, sentences, paragraphs, lines, the contents of parentheses) or movements (jump to end of word, jump to end of paragraph, jump forward until the letter ‘e’, etc).
+Forming objects generally involves the use of a modifier. You can also add a count to perform the action count times.
+
 | Verbs | Use | 
 | - | - | 
 | v | visual |
@@ -25,9 +32,6 @@ Vim cheat sheet, useful commands compatible with `vscodevim` for Microsoft Visua
 | t | tag, works for html/xm |
 
 
-## Commands
-
-Vim commands are formed from a combination of verbs and targets.The targets could be objects (words, sentences, paragraphs, lines, the contents of parentheses) or movements (jump to end of word, jump to end of paragraph, jump forward until the letter ‘e’, etc). Forming objects generally involves the use of a modifier. You can also add a count to perform the action count times.
 
 
 
