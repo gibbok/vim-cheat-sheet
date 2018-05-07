@@ -138,3 +138,20 @@ http://vim.wikia.com/wiki/Using_marks
 
 
 https://github.com/gibbok/vim-cheat-sheet
+
+
+f{character}
+find and move character to target
+
+;
+move to next command
+
+t{character}
+find and move one character before target
+
+`vi[`
+visual select inside [
+if in visual more we select
+`i{character}` we can expand the selection to that character, similar including `a{character}`
+
+to exit insert mode use `ctrl+[` or `ctrl+c`
