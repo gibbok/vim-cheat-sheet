@@ -179,3 +179,11 @@ visual select inside [
 if in visual more we select
 `i{character}` we can expand the selection to that character, similar including `a{character}`
 
+
+
+Next tab: gt
+
+Prior tab: gT
+
+Numbered tab: nnngt
+
