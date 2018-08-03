@@ -189,4 +189,5 @@ Next tab: gt
 Prior tab: gT
 
 Numbered tab: nnngt
+Close all tabs and keep open only the focused one: :tabonly
 
