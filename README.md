@@ -194,6 +194,8 @@ Close all tabs and keep open only the focused one: :tabonly
 :split (split into two windows, top half and bottom half) and :vsplit (left and right) commands. You can then use Ctrl-W direction to switch windows (where direction is one of the normal hjkl cursor movement keys, or the arrow keys)
 A shortcut for a horizontal split is :sp, with the vertical shortcut being :vsp
 
+Focus is in the new split initially. To move between splits first press Ctrl-w 
+
 Ctrl-y Moves screen up one line
 Ctrl-e Moves screen down one line
 Ctrl-u Moves cursor & screen up ½ page
