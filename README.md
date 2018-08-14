@@ -211,3 +211,4 @@ zb - move current line to the bottom of the screen
 t = till
 example: dt. (delete till dot)
 or df.(delete till dot included)
+You can remember these commands as `find` and `t`ill. 
