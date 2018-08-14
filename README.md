@@ -212,3 +212,6 @@ t = till
 example: dt. (delete till dot)
 or df.(delete till dot included)
 You can remember these commands as `find` and `t`ill. 
+
+
+https://www.youtube.com/watch?v=5r6yzFEXajQ&t=1269s
