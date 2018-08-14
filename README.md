@@ -207,3 +207,7 @@ Ctrl-y and Ctrl-e only change the cursor position if it would be moved off scree
 zt - move current line to the top of the screen
 
 zb - move current line to the bottom of the screen
+
+t = till
+example: dt. (delete till dot)
+or df.(delete till dot included)
