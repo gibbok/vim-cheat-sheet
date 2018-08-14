@@ -197,4 +197,5 @@ A shortcut for a horizontal split is :sp, with the vertical shortcut being :vsp
 ctrl+e scroll window down
 ctrl+y scroll window up
 
-
+zt - move current line to the top of the screen
+zb - move current line to the bottom of the screen
