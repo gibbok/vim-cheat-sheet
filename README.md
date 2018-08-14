@@ -203,4 +203,5 @@ Ctrl-f Moves screen down one page, cursor to first line
 Ctrl-y and Ctrl-e only change the cursor position if it would be moved off screen.
 
 zt - move current line to the top of the screen
+
 zb - move current line to the bottom of the screen
