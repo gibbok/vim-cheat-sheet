@@ -215,3 +215,8 @@ You can remember these commands as `find` and `t`ill.
 
 
 https://www.youtube.com/watch?v=5r6yzFEXajQ&t=1269s
+
+CTRL-O : Retrace your movements in file in backwards.
+
+CTRL-I : Retrace your movements in file in forwards.
+From the vim help files:
