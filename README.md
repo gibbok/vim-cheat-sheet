@@ -220,3 +220,19 @@ CTRL-O : Retrace your movements in file in backwards.
 
 CTRL-I : Retrace your movements in file in forwards.
 From the vim help files:
+
+
+The quickest way is to hit either:
+
+(two apostrophes) or
+```
+''
+```
+
+(two backticks):
+
+```
+``
+```
+
+Note that the difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. On a UK keyboard, the apostrophe is more accessible, so I tend to use that one. There are loads of useful marks like this, see :help mark-motions.
