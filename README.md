@@ -236,3 +236,6 @@ The quickest way is to hit either:
 ```
 
 Note that the difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. On a UK keyboard, the apostrophe is more accessible, so I tend to use that one. There are loads of useful marks like this, see :help mark-motions.
+
+---
+The command dw will delete from the current cursor position to the beginning of the next word character. The command d$ (note, that's a dollar sign, not an 'S') will delete from the current cursor position to the end of the current line. D is a synonym for d$.
