@@ -239,3 +239,6 @@ Note that the difference is that the backtick goes to the same location on the l
 
 ---
 The command dw will delete from the current cursor position to the beginning of the next word character. The command d$ (note, that's a dollar sign, not an 'S') will delete from the current cursor position to the end of the current line. D is a synonym for d$.
+
+
+https://www.youtube.com/watch?v=wlR5gYd6um0
