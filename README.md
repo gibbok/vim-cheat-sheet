@@ -242,3 +242,11 @@ The command dw will delete from the current cursor position to the beginning of 
 
 
 https://www.youtube.com/watch?v=wlR5gYd6um0
+
+To delete forward up to character 'X' type dtX
+
+To delete forward through character 'X' type dfX
+
+To delete backward up to character 'X' type dTX
+
+To delete backward through character 'X' type dFX
