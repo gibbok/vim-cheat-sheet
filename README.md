@@ -252,4 +252,4 @@ To delete backward up to character 'X' type dTX
 
 To delete backward through character 'X' type dFX
 
-Move to the end of the line in normal mode in VIM: Jump to last non blank `g_`
+Move to the end of the line in normal mode in VIM: Jump to last non blank `g_` or use `$` which moves to the last character on the line.
