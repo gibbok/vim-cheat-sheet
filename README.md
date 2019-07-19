@@ -253,3 +253,23 @@ To delete backward up to character 'X' type dTX
 To delete backward through character 'X' type dFX
 
 Move to the end of the line in normal mode in VIM: Jump to last non blank `g_` or use `$` which moves to the last character on the line.
+
+
+
+ ~    : Changes the case of current character
+
+ guu  : Change current line from upper to lower.
+
+ gUU  : Change current LINE from lower to upper.
+
+ guw  : Change to end of current WORD from upper to lower.
+
+ guaw : Change all of current WORD to lower.
+
+ gUw  : Change to end of current WORD from lower to upper.
+
+ gUaw : Change all of current WORD to upper.
+
+ g~~  : Invert case to entire line
+
+ guG : Change to lowercase until the end of document.
