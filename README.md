@@ -273,3 +273,6 @@ Move to the end of the line in normal mode in VIM: Jump to last non blank `g_` o
  g~~  : Invert case to entire line
 
  guG : Change to lowercase until the end of document.
+ 
+ 
+ https://vim.fandom.com/wiki/All_the_right_moves
