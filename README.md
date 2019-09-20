@@ -276,3 +276,7 @@ Move to the end of the line in normal mode in VIM: Jump to last non blank `g_` o
  
  
  https://vim.fandom.com/wiki/All_the_right_moves
+ 
+ J joins the line the cursor is on with the line below.
+
+[vim graphical cheat sheet pdf](https://eggplant.pro/blog/wp-content/uploads/2016/12/vi-vim-tutorial.pdf)
