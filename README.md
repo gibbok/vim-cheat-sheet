@@ -280,3 +280,7 @@ Move to the end of the line in normal mode in VIM: Jump to last non blank `g_` o
  J joins the line the cursor is on with the line below.
 
 [vim graphical cheat sheet pdf](https://eggplant.pro/blog/wp-content/uploads/2016/12/vi-vim-tutorial.pdf)
+
+
+Set VIM mode for zsh
+https://unix.stackexchange.com/questions/547/make-my-zsh-prompt-show-mode-in-vi-mode?noredirect=1&lq=1
