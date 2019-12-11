@@ -284,3 +284,9 @@ Move to the end of the line in normal mode in VIM: Jump to last non blank `g_` o
 
 Set VIM mode for zsh
 https://unix.stackexchange.com/questions/547/make-my-zsh-prompt-show-mode-in-vi-mode?noredirect=1&lq=1
+
+Delete all content of the document
+:%d
+
+How can i do a 'change word' using the current paste buffer
+With your word yanked, cursor over the word you want to replace and do `viwp`. Which is visual select inner word and paste.
