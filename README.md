@@ -26,7 +26,7 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 | V       | enter visual line (selects the current line in one keystroke)       |
 | p       | paste the buffer after the cursor                                   |
 | P       | paste the buffer before the cursor                                  |
-| r[char] | replace the character under the cursor                              |
+| r[char] | replace the character under the cursor [char]                       |
 | s       | delete the character under the curser and puts you into insert mode |
 | x       | delete the character under the cursor                               |
 | u       | undo the last command                                               |
@@ -41,7 +41,7 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 |---------|-----------------------------------------------|
 | i       | inside                                        |
 | a       | around                                        |
-| t       | till...finds a character                      |
+| t       | till... finds a character                     |
 | f[char] | find... like till except including the [char] |
 | /       | search...find a string/regex                  |
 
@@ -92,8 +92,8 @@ Nouns or movements are commands for moving within the document or representing a
 
 |          |                                                                                                                                                           |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| vi[char] | visualize all content inside that characters excluding delimiter                                                                                          |
-| va[char] | visualize all content inside that characters including delimiter                                                                                          |
+| vi[char] | visualize all content inside that [char] excluding delimiter                                                                                          |
+| va[char] | visualize all content inside that [char] including delimiter                                                                                          |
 | vi{      | select all content inside curly braces excluding braces                                                                                                   |
 | va{      | select all content inside curly braces including braces                                                                                                   |
 | viw      | select world under the cursor                                                                                                                             |
