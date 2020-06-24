@@ -12,38 +12,38 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 
 ### Commands
 
-|    |                                                                     |
-|----|---------------------------------------------------------------------|
-| v  | visual                                                              |
-| c  | change                                                              |
-| d  | delete (remove from the document and put in buffer)                 |
-| dd | delete current line                                                 |
-| y  | yank/copy                                                           |
-| yy | yank/copy the line)                                                 |
-| i  | enter insert mode                                                   |
-| I  | enter insert mode at the beginning of the line                      |
-| v  | enter visual mode                                                   |
-| V  | enter visual line (selects the current line in one keystroke)       |
-| p  | paste the buffer after the cursor                                   |
-| P  | paste the buffer before the cursor                                  |
-| r  | replace the character under the cursor with [char]                  |
-| s  | delete the character under the curser and puts you into insert mode |
-| x  | delete the character under the cursor                               |
-| u  | undo the last command                                               |
-| a  | append and enter insert mode after the carat                        |
-| A  | append to line (enter insert mode at the end of the line)           |
-| o  | open a line after the current one and enter insert mode             |
-| O  | open a line before the current one and enter insert mode            |
+|         |                                                                     |
+|---------|---------------------------------------------------------------------|
+| v       | visual                                                              |
+| c       | change                                                              |
+| d       | delete (remove from the document and put in buffer)                 |
+| dd      | delete current line                                                 |
+| y       | yank/copy                                                           |
+| yy      | yank/copy the line)                                                 |
+| i       | enter insert mode                                                   |
+| I       | enter insert mode at the beginning of the line                      |
+| v       | enter visual mode                                                   |
+| V       | enter visual line (selects the current line in one keystroke)       |
+| p       | paste the buffer after the cursor                                   |
+| P       | paste the buffer before the cursor                                  |
+| r[char] | replace the character under the cursor with char                    |
+| s       | delete the character under the curser and puts you into insert mode |
+| x       | delete the character under the cursor                               |
+| u       | undo the last command                                               |
+| a       | append and enter insert mode after the carat                        |
+| A       | append to line (enter insert mode at the end of the line)           |
+| o       | open a line after the current one and enter insert mode             |
+| O       | open a line before the current one and enter insert mode            |
 
 ### Modifiers
 
-|   |                                             |
-|---|---------------------------------------------|
-| i | inside                                      |
-| a | around                                      |
-| t | till...finds a character                    |
-| f | find... like till except including the char |
-| / | search...find a string/regex                |
+|         |                                               |
+|---------|-----------------------------------------------|
+| i       | inside                                        |
+| a       | around                                        |
+| t       | till...finds a character                      |
+| f[char] | find... like till except including the [char] |
+| /       | search...find a string/regex                  |
 
 ### Targets (Text objects)
 
@@ -134,22 +134,22 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 
 ## Others
 
-|              |                                                                      |
-|--------------|----------------------------------------------------------------------|
-| `.`          | the dot, command repeats the last change made in normal mode         |
-| dat          | delete the current tag (and all its content)                         |
-| f[character] | find character and move cursor at that position                      |
-| t[character] | find character and move cursor at one position before                |
-| vi[          | visual select inside `[`                                             |
-| i[character] | expand selection to that character, similar including `a{character}` |
-| gt           | move the cursor to next tab                                          |
-| gT           | move the cursor to prior tab                                         |
-| nnngt        | numbered tab                                                         |
-| :tabonly     | close all tabs and keep open only the focused one                    |
-| :split       | split into two windows, top half and bottom half                     |
-| :sp          | same as :split                                                       |
-| :vsplit      | split into two windows, left and right                               |
-| :vsp         | same as :vsplit                                                      |
+|          |                                                                 |
+|----------|-----------------------------------------------------------------|
+| .        | the dot, command repeats the last change made in normal mode    |
+| dat      | delete the current tag (and all its content)                    |
+| f[char]  | find character and move cursor at that position                 |
+| t[car]   | find character and move cursor at one position before           |
+| vi[      | visual select inside `[`                                        |
+| i[car]   | expand selection to that character, similar including `a[char]` |
+| gt       | move the cursor to next tab                                     |
+| gT       | move the cursor to prior tab                                    |
+| nnngt    | numbered tab                                                    |
+| :tabonly | close all tabs and keep open only the focused one               |
+| :split   | split into two windows, top half and bottom half                |
+| :sp      | same as :split                                                  |
+| :vsplit  | split into two windows, left and right                          |
+| :vsp     | same as :vsplit                                                 |
 
 Notes:
 You can then use Ctrl-W direction to switch windows (where direction is one of the normal hjkl cursor movement keys, or the arrow keys)
@@ -157,12 +157,12 @@ The focus is on the new split initially. To move between splits first press Ctrl
 
 |        |                                                                                   |
 |--------|-----------------------------------------------------------------------------------|
-| Ctrl-y | move the screen up one line                                                           |
-| Ctrl-e | move the screen down one line                                                         |
+| Ctrl-y | move the screen up one line                                                       |
+| Ctrl-e | move the screen down one line                                                     |
 | Ctrl-u | move cursor & screen up ½ page                                                    |
 | Ctrl-d | move cursor & screen down ½ page                                                  |
-| Ctrl-b | move the screen up one page, cursor to the last line                                  |
-| Ctrl-f | move the screen down one page, cursor to the first line                               |
+| Ctrl-b | move the screen up one page, cursor to the last line                              |
+| Ctrl-f | move the screen down one page, cursor to the first line                           |
 | Ctrl-y | and Ctrl-e only change the cursor position if it would be moved off-screen        |
 | zt     | move current line to the top of the screen                                        |
 | zb     | move current line to the bottom of the screen                                     |
@@ -173,37 +173,36 @@ The focus is on the new split initially. To move between splits first press Ctrl
 | viwp   | visual select inner word and paste (change a selected word using current buffer ) |
 
 Notes:
-The quickest way to retrace your movements is to hit either: two apostrophes `''` or two backticks ````.
-The difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. On a UK keyboard, the apostrophe is more accessible, so I tend to use that one. There are loads of useful marks like this, see :help mark-motions.
+The quickest way to retrace your movements is to hit either: two apostrophes `''` or two backticks ````. The difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. There are loads of useful marks like this, see :help mark-motions.
 
 Move to the end of the line in normal mode in VIM: Jump to last nonblank `g_` or use `$` which moves to the last character on the line.
 
 ### Deleting
 
-|     |                                                                                                     |
-|-----|-----------------------------------------------------------------------------------------------------|
-| dw  | delete from the current cursor position to the beginning of the next word character                 |
-| d$  | delete from the current cursor position to the end of the current line ((note that's a dollar sign) |
-| D   | as d$                                                                                               |
-| dtX | delete forward up to character 'X'                                                                  |
-| dfX | delete forward through character 'X'                                                                |
-| dTX | delete backward up to character 'X'                                                                 |
-| dFX | delete backward through character 'X'                                                               |
-| :%d | delete all content of the document                                                                  |
+|     |                                                                                     |
+|-----|-------------------------------------------------------------------------------------|
+| dw  | delete from the current cursor position to the beginning of the next word character |
+| d$  | delete from the current cursor position to the end of the current line              |
+| D   | as d$                                                                               |
+| dtX | delete forward up to character "X"                                                  |
+| dfX | delete forward through character "X"                                                |
+| dTX | delete backward up to character "X"                                                 |
+| dFX | delete backward through character "X"                                               |
+| :%d | delete all content of the document                                                  |
 
 ### Change case
 
-|      |                                                   |
-|------|---------------------------------------------------|
-| ~    | changes the case of current character             |
-| guu  | change the current line from upper to lower           |
-| gUU  | change the current line from lower to upper           |
-| guw  | change to the end of current WORD from upper to lower |
-| guaw | change all of the current WORD to lower.              |
+|      |                                                           |
+|------|-----------------------------------------------------------|
+| ~    | changes the case of current character                     |
+| guu  | change the current line from upper to lower               |
+| gUU  | change the current line from lower to upper               |
+| guw  | change to the end of current WORD from upper to lower     |
+| guaw | change all of the current WORD to lower.                  |
 | gUw  | change to the end of the current WORD from lower to upper |
-| gUaw | change all of the current WORD to upper               |
-| g~~  | invert case to entire line                        |
-| guG  | change to lowercase until the end of document     |
+| gUaw | change all of the current WORD to upper                   |
+| g~~  | invert case to entire line                                |
+| guG  | change to lowercase until the end of document             |
 
 ## Interesting resources
 
