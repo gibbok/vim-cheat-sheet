@@ -92,8 +92,8 @@ Nouns or movements are commands for moving within the document or representing a
 
 |          |                                                                                                                                                           |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| vi[char] | visualize all content inside that [char] excluding delimiter                                                                                          |
-| va[char] | visualize all content inside that [char] including delimiter                                                                                          |
+| vi[char] | visualize all content inside that [char] excluding delimiter                                                                                              |
+| va[char] | visualize all content inside that [char] including delimiter                                                                                              |
 | vi{      | select all content inside curly braces excluding braces                                                                                                   |
 | va{      | select all content inside curly braces including braces                                                                                                   |
 | viw      | select world under the cursor                                                                                                                             |
@@ -135,10 +135,10 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 |          |                                                                                   |
 |----------|-----------------------------------------------------------------------------------|
 | dat      | delete the current tag (and all its content)                                      |
-| f[char]  | find character and move cursor at that position                                   |
-| t[car]   | find character and move cursor at one position before                             |
+| f[char]  | find character and move cursor at position [char]                                 |
+| t[car]   | find character and move cursor at one position before [char]                      |
 | vi[      | visual select inside `[`                                                          |
-| i[car]   | expand selection to that character, similar including `a[char]`                   |
+| i[car]   | expand selection to that [char], similar including `a[char]`                      |
 | gt       | move the cursor to next tab                                                       |
 | gT       | move the cursor to prior tab                                                      |
 | nnngt    | numbered tab                                                                      |
@@ -155,7 +155,7 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 | Ctrl-d   | move cursor & screen down ½ page                                                  |
 | Ctrl-b   | move the screen up one page, cursor to the last line                              |
 | Ctrl-f   | move the screen down one page, cursor to the first line                           |
-| Ctrl-y   | and Ctrl-e only change the cursor position if it would be moved off-screen        |
+| Ctrl-y   | only change the cursor position if it would be moved off-screen, same as Ctrl-e   |
 | zt       | move current line to the top of the screen                                        |
 | zb       | move current line to the bottom of the screen                                     |
 | t        | till, example dt. (delete till dot) or df.(delete till dot included)              |
@@ -171,10 +171,10 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 | dw  | delete from the current cursor position to the beginning of the next word character |
 | d$  | delete from the current cursor position to the end of the current line              |
 | D   | as d$                                                                               |
-| dtX | delete forward up to character "X"                                                  |
-| dfX | delete forward through character "X"                                                |
-| dTX | delete backward up to character "X"                                                 |
-| dFX | delete backward through character "X"                                               |
+| dtX | delete forward up to character X                                                    |
+| dfX | delete forward through character X                                                  |
+| dTX | delete backward up to character X                                                   |
+| dFX | delete backward through character X                                                 |
 | :%d | delete all content of the document                                                  |
 
 ### Change case
@@ -184,10 +184,10 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 | ~    | changes the case of current character                     |
 | guu  | change the current line from upper to lower               |
 | gUU  | change the current line from lower to upper               |
-| guw  | change to the end of current WORD from upper to lower     |
-| guaw | change all of the current WORD to lower.                  |
-| gUw  | change to the end of the current WORD from lower to upper |
-| gUaw | change all of the current WORD to upper                   |
+| guw  | change to the end of current word from upper to lower     |
+| guaw | change all of the current word to lower.                  |
+| gUw  | change to the end of the current word from lower to upper |
+| gUaw | change all of the current word to upper                   |
 | g~~  | invert case to entire line                                |
 | guG  | change to lowercase until the end of document             |
 
