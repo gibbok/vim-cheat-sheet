@@ -193,7 +193,7 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 
 ### Notes
 
-1. The quickest way to retrace your movements is to hit either: two apostrophes `''` or two backticks ````. The difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. There are loads of useful marks like this, see :help mark-motions.
+1. The quickest way to retrace your movements is to hit either: two apostrophes "''" or two backticks "`". The difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. There are loads of useful marks like this, see :help mark-motions.
 
 1. Move to the end of the line in normal mode in VIM: Jump to last nonblank `g_` or use `$` which moves to the last character on the line.
 
@@ -205,7 +205,7 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 
 [Using marks](http://vim.wikia.com/wiki/Using_marks)
 
-[vim + tmux](https://www.youtube.com/watch?v=5r6yzFEXajQ&t=1269s)
+[Vim + Tmux](https://www.youtube.com/watch?v=5r6yzFEXajQ&t=1269s)
 
 [Mastering the Vim Language](https://www.youtube.com/watch?v=wlR5gYd6um0)
 
