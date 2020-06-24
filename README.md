@@ -100,14 +100,8 @@ Nouns or movements are commands for moving within the document or representing a
 | vit      | visually select text in a tag                                                                                                                             |
 | vat      | visually select text around a tag                                                                                                                         |
 | vap      | visually select paragraph under cursor                                                                                                                    |
-| Ctrl-R   | redo the last undo (sidenote: in vim undo/redo forms a tree, changes aren’t lost)                                                                         |
-| Ctrl-[   | exit insert mode                                                                                                                                          |
-| Ctrl-c   | exit insert mode                                                                                                                                          |
 | gc       | toggles line comment, example `gcc` to toggle line comment for the current line and `gc2j` to toggle line comments for the current line and the next line |
 | gC       | toggles block comment, example `gCi` to comment out everything within parenthesis                                                                         |
-| :sp      | spit current document in two horizontally                                                                                                                 |
-| :vs      | spit current document in two vertically                                                                                                                   |
-| Ctrl-ww  | window switching                                                                                                                                          |
 | ciw      | change inner word will change the whole word under the cursor                                                                                             |
 | cw       | change the word from the current cursor position                                                                                                          |
 | /        | enter regex search mode                                                                                                                                   |
@@ -117,6 +111,10 @@ Nouns or movements are commands for moving within the document or representing a
 | ^ or 0   | move to the beginning of the line                                                                                                                         |
 | Shift+0  | move to the end of the line                                                                                                                               |
 | Shift+i  | move to the beginning of the line and switch to insert mode                                                                                               |
+| Ctrl-R   | redo the last undo (sidenote: in vim undo/redo forms a tree, changes aren’t lost)                                                                         |
+| Ctrl-[   | exit insert mode                                                                                                                                          |
+| Ctrl-c   | exit insert mode                                                                                                                                          |
+| Ctrl-ww  | window switching                                                                                                                                          |
 
 ## Registers
 
@@ -134,48 +132,37 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 
 ## Others
 
-|          |                                                                 |
-|----------|-----------------------------------------------------------------|
-| .        | the dot, command repeats the last change made in normal mode    |
-| dat      | delete the current tag (and all its content)                    |
-| f[char]  | find character and move cursor at that position                 |
-| t[car]   | find character and move cursor at one position before           |
-| vi[      | visual select inside `[`                                        |
-| i[car]   | expand selection to that character, similar including `a[char]` |
-| gt       | move the cursor to next tab                                     |
-| gT       | move the cursor to prior tab                                    |
-| nnngt    | numbered tab                                                    |
-| :tabonly | close all tabs and keep open only the focused one               |
-| :split   | split into two windows, top half and bottom half                |
-| :sp      | same as :split                                                  |
-| :vsplit  | split into two windows, left and right                          |
-| :vsp     | same as :vsplit                                                 |
-
-Notes:
-You can then use Ctrl-W direction to switch windows (where direction is one of the normal hjkl cursor movement keys, or the arrow keys)
-The focus is on the new split initially. To move between splits first press Ctrl-w.
-
-|        |                                                                                   |
-|--------|-----------------------------------------------------------------------------------|
-| Ctrl-y | move the screen up one line                                                       |
-| Ctrl-e | move the screen down one line                                                     |
-| Ctrl-u | move cursor & screen up ½ page                                                    |
-| Ctrl-d | move cursor & screen down ½ page                                                  |
-| Ctrl-b | move the screen up one page, cursor to the last line                              |
-| Ctrl-f | move the screen down one page, cursor to the first line                           |
-| Ctrl-y | and Ctrl-e only change the cursor position if it would be moved off-screen        |
-| zt     | move current line to the top of the screen                                        |
-| zb     | move current line to the bottom of the screen                                     |
-| t      | till, example dt. (delete till dot) or df.(delete till dot included)              |
-| CTRL-O | retrace your movements in file in backward                                        |
-| CTRL-I | retrace your movements in file in forwards                                        |
-| J      | joins the line the cursor is on with the line below                               |
-| viwp   | visual select inner word and paste (change a selected word using current buffer ) |
-
-Notes:
-The quickest way to retrace your movements is to hit either: two apostrophes `''` or two backticks ````. The difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. There are loads of useful marks like this, see :help mark-motions.
-
-Move to the end of the line in normal mode in VIM: Jump to last nonblank `g_` or use `$` which moves to the last character on the line.
+|          |                                                                                   |
+|----------|-----------------------------------------------------------------------------------|
+| dat      | delete the current tag (and all its content)                                      |
+| f[char]  | find character and move cursor at that position                                   |
+| t[car]   | find character and move cursor at one position before                             |
+| vi[      | visual select inside `[`                                                          |
+| i[car]   | expand selection to that character, similar including `a[char]`                   |
+| gt       | move the cursor to next tab                                                       |
+| gT       | move the cursor to prior tab                                                      |
+| nnngt    | numbered tab                                                                      |
+| :tabonly | close all tabs and keep open only the focused one                                 |
+| :split   | split into two windows, top half and bottom half                                  |
+| :sp      | same as :split                                                                    |
+| :vsplit  | split into two windows, left and right                                            |
+| :vsp     | same as :vsplit                                                                   |
+| :sp      | spit current document in two horizontally                                         |
+| :vs      | spit current document in two vertically                                           |
+| Ctrl-y   | move the screen up one line                                                       |
+| Ctrl-e   | move the screen down one line                                                     |
+| Ctrl-u   | move cursor & screen up ½ page                                                    |
+| Ctrl-d   | move cursor & screen down ½ page                                                  |
+| Ctrl-b   | move the screen up one page, cursor to the last line                              |
+| Ctrl-f   | move the screen down one page, cursor to the first line                           |
+| Ctrl-y   | and Ctrl-e only change the cursor position if it would be moved off-screen        |
+| zt       | move current line to the top of the screen                                        |
+| zb       | move current line to the bottom of the screen                                     |
+| t        | till, example dt. (delete till dot) or df.(delete till dot included)              |
+| CTRL-O   | retrace your movements in file in backward                                        |
+| CTRL-I   | retrace your movements in file in forwards                                        |
+| J        | joins the line the cursor is on with the line below                               |
+| viwp     | visual select inner word and paste (change a selected word using current buffer ) |
 
 ### Deleting
 
@@ -203,6 +190,16 @@ Move to the end of the line in normal mode in VIM: Jump to last nonblank `g_` or
 | gUaw | change all of the current WORD to upper                   |
 | g~~  | invert case to entire line                                |
 | guG  | change to lowercase until the end of document             |
+
+### Notes
+
+1. The quickest way to retrace your movements is to hit either: two apostrophes `''` or two backticks ````. The difference is that the backtick goes to the same location on the line, whereas the apostrophe goes to the start of the line. There are loads of useful marks like this, see :help mark-motions.
+
+1. Move to the end of the line in normal mode in VIM: Jump to last nonblank `g_` or use `$` which moves to the last character on the line.
+
+1. You can use Ctrl-W direction to switch windows (where direction is one of the normal hjkl cursor movement keys, or the arrow keys).
+
+1. The focus is on the new split initially. To move between splits first press Ctrl-w.
 
 ## Interesting resources
 
