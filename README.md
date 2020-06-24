@@ -26,7 +26,7 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 | V       | enter visual line (selects the current line in one keystroke)       |
 | p       | paste the buffer after the cursor                                   |
 | P       | paste the buffer before the cursor                                  |
-| r[char] | replace the character under the cursor with char                    |
+| r[char] | replace the character under the cursor                              |
 | s       | delete the character under the curser and puts you into insert mode |
 | x       | delete the character under the cursor                               |
 | u       | undo the last command                                               |
