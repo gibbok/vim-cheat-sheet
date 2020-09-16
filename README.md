@@ -115,6 +115,7 @@ Nouns or movements are commands for moving within the document or representing a
 | Ctrl-[   | exit insert mode                                                                                                                                          |
 | Ctrl-c   | exit insert mode                                                                                                                                          |
 | Ctrl-ww  | window switching                                                                                                                                          |
+| gg=G     | Autoformat/indent code                                                                                                                                    |
 
 ## Registers
 
