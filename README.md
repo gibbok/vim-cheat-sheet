@@ -14,12 +14,16 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 
 |         |                                                                     |
 |---------|---------------------------------------------------------------------|
-| v       | visual                                                              |
+| v       | enter visual mode                                                   |
+| V       | enter visual mode and select current line                           |
 | c       | change                                                              |
+| cc      | delete current line and then enter insert mode                      |
+| C       | Delete from the cursor position to the end of the line then enter insert mode |
 | d       | delete (remove from the document and put in buffer)                 |
 | dd      | delete current line                                                 |
+| D       | Delete from the cursor position to the end of the line              |
 | y       | yank/copy                                                           |
-| yy      | yank/copy the line)                                                 |
+| yy or Y | yank/copy the line                                                  |
 | i       | enter insert mode                                                   |
 | I       | enter insert mode at the beginning of the line                      |
 | v       | enter visual mode                                                   |
@@ -27,7 +31,9 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 | p       | paste the buffer after the cursor                                   |
 | P       | paste the buffer before the cursor                                  |
 | r[char] | replace the character under the cursor [char]                       |
+| R       | enter Replace mode                                                  |
 | s       | delete the character under the curser and puts you into insert mode |
+| S       | delete current line and then enter insert mode (same as `cc`)       |
 | x       | delete the character under the cursor                               |
 | u       | undo the last command                                               |
 | a       | append and enter insert mode after the carat                        |
