@@ -14,16 +14,12 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 
 |         |                                                                     |
 |---------|---------------------------------------------------------------------|
-| v       | enter visual mode                                                   |
-| V       | enter visual mode and select current line                           |
+| v       | visual                                                              |
 | c       | change                                                              |
-| cc      | delete current line and then enter insert mode                      |
-| C       | Delete from the cursor position to the end of the line then enter insert mode |
 | d       | delete (remove from the document and put in buffer)                 |
 | dd      | delete current line                                                 |
-| D       | Delete from the cursor position to the end of the line              |
 | y       | yank/copy                                                           |
-| yy or Y | yank/copy the line                                                  |
+| yy      | yank/copy the line)                                                 |
 | i       | enter insert mode                                                   |
 | I       | enter insert mode at the beginning of the line                      |
 | v       | enter visual mode                                                   |
@@ -31,9 +27,7 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 | p       | paste the buffer after the cursor                                   |
 | P       | paste the buffer before the cursor                                  |
 | r[char] | replace the character under the cursor [char]                       |
-| R       | enter Replace mode                                                  |
 | s       | delete the character under the curser and puts you into insert mode |
-| S       | delete current line and then enter insert mode (same as `cc`)       |
 | x       | delete the character under the cursor                               |
 | u       | undo the last command                                               |
 | a       | append and enter insert mode after the carat                        |
@@ -47,15 +41,19 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 |---------|-----------------------------------------------|
 | i       | inside                                        |
 | a       | around                                        |
-| t       | till... finds a character                     |
+| t[char] | till... finds a character                     |
+| T[char] | like t but in opposite direction              |
 | f[char] | find... like till except including the [char] |
+| F[char] | like f, but in opposite direction             |
 | /       | search...find a string/regex                  |
+| ?       | like / but in opposite direction              |
 
 ### Targets (Text objects)
 
 |   |                        |
 |---|------------------------|
 | w | word                   |
+| W | WORD (consists of a sequence of non-blank characters, separated with white space) |
 | s | sentence               |
 | p | paragraph              |
 | b | block/parentheses      |
@@ -74,6 +72,8 @@ Nouns or movements are commands for moving within the document or representing a
 | zz         | scroll the line with the cursor to the center of the screen           |
 | zt         | scroll the line with the cursor to the top                            |
 | zb         | scroll the line with the cursor to the bottom                         |
+| gg         | go to the first line                                                  |
+| G          | go to the last line                                                   |
 | Ctrl-D     | move half-page down                                                   |
 | Ctrl-U     | move half-page up                                                     |
 | Ctrl-B     | page up                                                               |
@@ -86,11 +86,13 @@ Nouns or movements are commands for moving within the document or representing a
 | ), (       | move to the next/previous sentence                                    |
 | }, {       | move to the next/previous paragraph                                   |
 | /[regexp]  | like t but instead of finding a character, it finds a regexp          |
+| ?[regexp]  | like `/`, but search in opposite direction                            |
 | %          | jump to the matching parenthesis (vim understands nested parenthesis) |
 | _          | move to the current line (useful for making commands line-based)      |
 | #[char]    | jump to the previous instance of the word under [char]                |
-| >>         | indent line                                                           |
-| <<         | outdent line                                                          |
+| >>         | indent line (shift line one shiftwidth rightwards)                    |
+| <<         | outdent line (shift line one shiftwidth leftwards)                    |
+| ==         | reindent current line                                                 |
 | *[char]    | jump to the next instance of the word under [char]                    |
 | ddp / ddkP | are common commands to move a line one down / up                      |
 
@@ -176,6 +178,7 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 |     |                                                                                     |
 |-----|-------------------------------------------------------------------------------------|
 | dw  | delete from the current cursor position to the beginning of the next word character |
+| diw | delete inner word will delete the whole word under the cursor                       |
 | d$  | delete from the current cursor position to the end of the current line              |
 | D   | as d$                                                                               |
 | dtX | delete forward up to character X                                                    |
@@ -190,7 +193,9 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 |------|-----------------------------------------------------------|
 | ~    | changes the case of current character                     |
 | guu  | change the current line from upper to lower               |
+| Vu   | change the current line from upper to lower, like guu     |
 | gUU  | change the current line from lower to upper               |
+| VU   | change the current line from lower to upper, like gUU     |
 | guw  | change to the end of current word from upper to lower     |
 | guaw | change all of the current word to lower.                  |
 | gUw  | change to the end of the current word from lower to upper |
