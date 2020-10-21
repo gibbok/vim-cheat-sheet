@@ -176,8 +176,8 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 | zt       | move current line to the top of the screen                                        |
 | zb       | move current line to the bottom of the screen                                     |
 | t        | till, example dt. (delete till dot) or df.(delete till dot included)              |
-| CTRL-O   | retrace your movements in file in backward                                        |
-| CTRL-I   | retrace your movements in file in forwards                                        |
+| Ctrl-O   | retrace your movements in file in backward                                        |
+| Ctrl-I   | retrace your movements in file in forwards                                        |
 | J        | joins the line the cursor is on with the line below                               |
 | viwp     | visual select inner word and paste (change a selected word using current buffer ) |
 
