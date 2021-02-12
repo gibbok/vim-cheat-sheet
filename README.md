@@ -26,8 +26,6 @@ Vim commands are formed from a combination of verbs and targets. The targets cou
 | yy or Y | yank/copy the line                                                  |
 | i       | enter insert mode                                                   |
 | I       | enter insert mode at the beginning of the line                      |
-| v       | enter visual mode                                                   |
-| V       | enter visual line (selects the current line in one keystroke)       |
 | p       | paste the buffer after the cursor                                   |
 | P       | paste the buffer before the cursor                                  |
 | r[char] | replace the character under the cursor [char]                       |
