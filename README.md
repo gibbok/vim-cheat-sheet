@@ -178,6 +178,8 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 | Ctrl-I   | retrace your movements in file in forwards                                        |
 | J        | joins the line the cursor is on with the line below                               |
 | viwp     | visual select inner word and paste (change a selected word using current buffer ) |
+| "+y      | copy to clipboard                                                                 |
+| "+p      | paste to clipboard                                                                |
 
 ### Deleting
 
