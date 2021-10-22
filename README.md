@@ -234,3 +234,5 @@ Please, note some of these commands are not supported by VSCodeVim yet.
 [Graphical cheat sheet](https://eggplant.pro/blog/wp-content/uploads/2016/12/vi-vim-tutorial.pdf)
 
 [Vim Visual Block Mode](https://www.youtube.com/watch?v=Ydzw70SvF-g)
+
+[SpaceVim](https://spacevim.org/)
